@@ -1,0 +1,82 @@
+/* regole generali */
+
+*{ 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* header */
+
+
+header{ 
+    background-color:#ff6900;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 900;
+}
+.row{ 
+    display: flex;
+    color: white;
+    align-items: center;
+    height: 50px;
+    margin: auto;
+    justify-content: space-between;
+    
+}
+
+.logo{ 
+    width: 130px;
+  
+}
+
+/* main */
+
+.contenitore{ 
+    width: 80%;
+    margin: 0 auto;
+}
+.row-col{ 
+    display: flex;
+    gap: 10px;
+    margin-top:40px;
+    
+    
+}
+
+.foto{ 
+    width: 100%;
+
+   
+}
+/* label */
+
+.product{ 
+    position: relative;
+    width: calc(100% / 3);
+}
+.label-red{ 
+    height: 20px;
+    width: 35px;
+    background-color: red;
+    position: absolute;
+    bottom:90px
+    
+}
+.label-green{ 
+    background-color: green;
+    position: absolute;
+    bottom: 90px;
+    left: 40px;
+    height: 20px;
+}
+
+/* elementi rigurdanti il prezzo */
+.price{ 
+    color: red;
+}
+
+.first-price{ 
+    text-decoration: line-through;
+}
