@@ -15,6 +15,7 @@ header{
     left: 0;
     width: 100%;
     z-index: 900;
+
 }
 .row{ 
     display: flex;
@@ -31,6 +32,10 @@ header{
   
 }
 
+.emoji:hover{ 
+    cursor: pointer;
+}
+
 /* main */
 
 .contenitore{ 
@@ -40,15 +45,27 @@ header{
 .row-col{ 
     display: flex;
     gap: 10px;
-    margin-top:40px;
+    margin-top:80px;
     
     
 }
 
-.foto{ 
+img{ 
     width: 100%;
+}
 
-   
+/* cambio foto */
+
+.cambio-foto{ 
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+
+.product:hover .cambio-foto{ 
+    display: block;
 }
 /* label */
 
@@ -61,17 +78,41 @@ header{
     width: 35px;
     background-color: red;
     position: absolute;
-    bottom:90px
+    bottom:90px;
+    color: white;
+    
     
 }
-.label-green{ 
+.label-green, .label-green2{ 
     background-color: green;
     position: absolute;
     bottom: 90px;
     left: 40px;
     height: 20px;
+    color: white;
 }
 
+.label-green2{
+    left:0;
+
+}
+/* tag hover cuore */
+
+.hearts{ 
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    background-color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+.hearts:hover{ 
+    color: red;
+    cursor: pointer;
+}
 /* elementi rigurdanti il prezzo */
 .price{ 
     color: red;
@@ -79,4 +120,33 @@ header{
 
 .first-price{ 
     text-decoration: line-through;
+}
+
+/* footer */
+footer{ 
+    background-color:#1a1a1a;
+    margin-top: 40px;
+    font-size: 12px;
+    line-height: 20px;
+}
+.row-footer{ 
+    display: flex;
+    color: white;
+    align-items: center;
+    height: 80px;
+    margin:0 auto;
+    justify-content: space-between; 
+    
+}
+
+.font-footer{ 
+    font-size: 15px;
+}
+.fa-brands{ 
+    margin: 3px;
+}
+a{ 
+    text-decoration: none;
+    color: white;
+    margin-right: 3px;
 }
